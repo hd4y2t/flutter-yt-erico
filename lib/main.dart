@@ -1,10 +1,150 @@
-import 'dart:math';
+//import 'dart:math';
 
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
 }
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+/*
+13. image view
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Image Widget"),
+        ),
+        body: Center(
+            child: Container(
+          width: 200,
+          height: 200,
+          padding: EdgeInsets.all(3),
+          color: Colors.blueGrey,
+          child: Image(
+            image: AssetImage("assets/file.png"),
+            fit: BoxFit.contain,
+          ),
+        )),
+      ),
+    );
+  }
+}
+*/
+/*
+12. Stack & align widget
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("stack & align widget"),
+        ),
+        body: Stack(
+          children: [
+            //background
+            Column(
+              children: <Widget>[
+                Flexible(
+                    flex: 1,
+                    child: Row(
+                      children: <Widget>[
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.white)),
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.black12)),
+                      ],
+                    )),
+                Flexible(
+                    flex: 1,
+                    child: Row(
+                      children: <Widget>[
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.black12)),
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.white)),
+                      ],
+                    ))
+              ],
+            ),
+            //listview dgn text
+            ListView(
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "ini adalah text yang ada dilapisan tengah dari stack",
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "ini adalah text yang ada dilapisan tengah dari stack",
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "ini adalah text yang ada dilapisan tengah dari stack",
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "ini adalah text yang ada dilapisan tengah dari stack",
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "ini adalah text yang ada dilapisan tengah dari stack",
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "ini adalah text yang ada dilapisan tengah dari stack",
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+            //button
+            Align(
+              alignment: Alignment(0.75, 0.85),
+              child: RaisedButton(
+                child: Text("My button"),
+                onPressed: () {},
+                color: Colors.teal,
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+*/
+
+/* 11. fleksibel widget
 
 class MyApp extends StatefulWidget {
   @override
@@ -112,8 +252,11 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+*/
+
 /*
 10 .animation container dan gesture detector
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
